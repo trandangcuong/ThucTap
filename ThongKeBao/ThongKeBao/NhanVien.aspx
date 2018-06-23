@@ -14,7 +14,6 @@
                 $("#datepicker").datepicker();
             });
         </script>
-
         <!-- girview -->
         <asp:GridView ID="gvNhanVien" runat="server" AutoGenerateColumns="false" ShowFooter="false" DataKeyNames="MaNV"
             ShowHeaderWhenEmpty="True" OnRowEditing="gvNhanVien_RowEditing"
