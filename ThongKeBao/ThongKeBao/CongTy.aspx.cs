@@ -62,7 +62,7 @@ namespace ThongKeBao
             {
 
                 sqlcon.Open();
-                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM CONG_TY WHERE TenNV LIKE N'%" + txtTimKiem.Text + "%'", sqlcon);
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM CONG_TY WHERE TenCTY LIKE N'%" + txtTimKiem.Text + "%'", sqlcon);
                 sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)
@@ -170,12 +170,17 @@ namespace ThongKeBao
                     lbSuccessMessage.Text = "Xóa thành Công";
                     lbErrorMessage.Text = "";
                 }
-            }
+            } 
             catch (Exception ex)
             {
                 lbSuccessMessage.Text = "";
                 lbErrorMessage.Text = ex.Message;
             }
+        }
+
+        protected void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            PopulateGridview1(txtTimKiem.Text);
         }
     }
 }

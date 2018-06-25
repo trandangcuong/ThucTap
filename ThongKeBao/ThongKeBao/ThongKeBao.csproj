@@ -178,6 +178,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChucVu.aspx" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Images\add.png" />
     <Content Include="Images\avatar.png" />
@@ -366,6 +367,13 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="ChucVu.aspx.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChucVu.aspx.designer.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NhanVien.aspx.cs">
       <DependentUpon>NhanVien.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

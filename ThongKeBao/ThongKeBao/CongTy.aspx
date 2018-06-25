@@ -109,52 +109,7 @@
         }
     </style>
 
-    <script>
-        function checkrange0() {
-            var temp = $('#MainContent_txtMaCTY').val().length;
-            if (temp > 0) {
-                $('#MainContent_txtMaCTY').val('');
-                alert("Mã công ty không được trống!");
-                $('#MainContent_txtMaCTY').focus();
-                return false;
-            }
-            return true;
-        }
-        
-        function checkrange1() {
-            var temp = $('#MainContent_txtTenCTY').val().length;
-            if (temp > 0 ) {
-                $('#MainContent_txtTenCTY').val('');
-                alert("Tên Công ty không được trống!");
-                $('#MainContent_txtTenCTY').focus();
-                return false;
-            }
-            return true;
-        }
-        function checkrange2() {
-            var temp = $('#MainContent_txtDiaChi').val().length;
-            if (temp > 0) {
-                $('#MainContent_txtDiaChi').val('');
-                alert("Địa chỉ không được trống!");
-                $('#MainContent_txtDiaChi').focus();
-                return false;
-            }
-            return true;
-        }
-        function checkrange3() {
-            var temp = $('#MainContent_txtHinhThuc').val().length;
-            if (temp > 0) {
-                $('#MainContent_txtHinhThuc').val('');
-                alert("Hình Thức không được trống!");
-                $('#MainContent_txtHinhThuc').focus();
-                return false;
-            }
-            return true;
-        }
-       
-      
-        
-    </script>
+   
 
     <div>
         <!-- Modal -->
@@ -168,27 +123,34 @@
                     <div class="modal-body">
                         <asp:Label ID="Label1" runat="server" Text="Mã công ty  :" Width="100px"></asp:Label>
                         <asp:TextBox ID="txtMaCTY" onfocusout="return checkrange0()" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtMaCTY" ErrorMessage=" không được rỗng" ForeColor="Red" ></asp:RequiredFieldValidator>
                         <br />
                         <br />
                         <asp:Label ID="Label2" runat="server" Text="Tên công ty :" Width="100px"></asp:Label>
                         <asp:TextBox ID="txtTenCTY" onfocusout="return checkrange1()" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtTenCTY" ErrorMessage=" không được rỗng" ForeColor="Red" ></asp:RequiredFieldValidator>
+
                         <br />
                         <br />
                         <asp:Label ID="Label3" runat="server" Text="Địa chỉ     :" Width="100px"></asp:Label>
                         <asp:TextBox ID="txtDiaChi" onfocusout="return checkrange2()" runat="server"></asp:TextBox>
-                
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtDiaChi" ErrorMessage=" không được rỗng" ForeColor="Red" ></asp:RequiredFieldValidator>
+
+
                         <br />
                         <br />
                         <asp:Label ID="Label4" runat="server" Text="Hình thức       :" Width="100px"></asp:Label>
                         <asp:TextBox ID="txtHinhThuc" runat="server" onfocusout="return checkrange3()" onkeypress="return functionx(event)"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtHinhThuc" ErrorMessage=" không được rỗng" ForeColor="Red" ></asp:RequiredFieldValidator>
+
                         <br />
                         <br />
-                        
+
 
                     </div>
                     <div class="modal-footer">
                         <div style="float: left; margin-left: 100px;">
-                            <asp:Button ID="btnThem" runat="server" Text="Thêm" CssClass="btn btn-default" OnClick="btnThem_Click"  />
+                            <asp:Button ID="btnThem" runat="server" Text="Thêm" CssClass="btn btn-default" OnClick="btnThem_Click" />
                         </div>
                         <button style="margin-right: 100px;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
@@ -198,6 +160,6 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 </asp:Content>

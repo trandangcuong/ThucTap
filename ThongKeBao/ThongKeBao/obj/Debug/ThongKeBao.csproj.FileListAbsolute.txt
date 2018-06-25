@@ -151,6 +151,5 @@ D:\THUC_TAP\ThucTap\ThongKeBao\ThongKeBao\bin\Microsoft.Owin.Security.Google.xml
 D:\THUC_TAP\ThucTap\ThongKeBao\ThongKeBao\bin\Microsoft.Owin.Security.Twitter.xml
 D:\THUC_TAP\ThucTap\ThongKeBao\ThongKeBao\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\THUC_TAP\ThucTap\ThongKeBao\ThongKeBao\bin\Microsoft.Owin.Security.OAuth.xml
-D:\THUC_TAP\ThucTap\ThongKeBao\ThongKeBao\obj\Debug\ThongKeBao.csprojResolveAssemblyReference.cache
 D:\THUC_TAP\ThucTap\ThongKeBao\ThongKeBao\obj\Debug\ThongKeBao.dll
 D:\THUC_TAP\ThucTap\ThongKeBao\ThongKeBao\obj\Debug\ThongKeBao.pdb
