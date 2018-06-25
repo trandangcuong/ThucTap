@@ -145,7 +145,8 @@ namespace ThongKeBao
                     sqlCmd.Parameters.AddWithValue("@CMND", (gvNhanVien.Rows[e.RowIndex].FindControl("txtCMND") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@SDT", (gvNhanVien.Rows[e.RowIndex].FindControl("txtSDT") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@ID", Convert.ToString(gvNhanVien.DataKeys[e.RowIndex].Value.ToString()));
-                    sqlCmd.ExecuteNonQuery();                 
+                    sqlCmd.ExecuteNonQuery();
+                    gvNhanVien.EditIndex = -1;
                     PopulateGridview1(txtTimKiem.Text);
                     lbSuccessMessage.Text = "Cập nhật thành công !";
                     lbErrorMessage.Text = "";

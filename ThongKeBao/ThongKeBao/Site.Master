@@ -109,7 +109,7 @@
                               <div class="dropdown-content">
                                 <a href="NhanVien.aspx">Thông tin nhân viên</a>
                                 <a href="CongTy.aspx">Thông tin công ty</a>
-                                <a href="#">Chức vụ</a>
+                                <a href="ChucVu.aspx">Chức vụ</a>
                               </div>
                              </div>
 

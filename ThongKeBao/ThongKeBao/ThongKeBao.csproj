@@ -179,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChucVu.aspx" />
+    <Content Include="CoPhanChiPhoi.aspx" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Images\add.png" />
     <Content Include="Images\avatar.png" />
@@ -373,6 +374,13 @@
     </Compile>
     <Compile Include="ChucVu.aspx.designer.cs">
       <DependentUpon>ChucVu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoPhanChiPhoi.aspx.cs">
+      <DependentUpon>CoPhanChiPhoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoPhanChiPhoi.aspx.designer.cs">
+      <DependentUpon>CoPhanChiPhoi.aspx</DependentUpon>
     </Compile>
     <Compile Include="NhanVien.aspx.cs">
       <DependentUpon>NhanVien.aspx</DependentUpon>

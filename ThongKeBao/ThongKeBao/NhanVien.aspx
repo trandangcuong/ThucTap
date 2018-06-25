@@ -19,7 +19,7 @@
             ShowHeaderWhenEmpty="True" OnRowEditing="gvNhanVien_RowEditing"
             OnRowCancelingEdit="gvNhanVien_RowCancelingEdit" OnRowUpdating="gvNhanVien_RowUpdating"
             OnRowDeleting="gvNhanVien_RowDeleting"
-            BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="6" Height="200px" Width="900px" CssClass="auto-style1">
+            BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="6" Height="250px" Width="100%" CssClass="auto-style1">
             <FooterStyle BackColor="White" ForeColor="#000066" />
             <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
