@@ -124,6 +124,7 @@ namespace ThongKeBao
         protected void gvCoPhanChiPhoi_RowEditing(object sender, GridViewEditEventArgs e)
         {
             gvCoPhanChiPhoi.EditIndex = e.NewEditIndex;
+            
             PopulateGridview1(txtTimKiem.Text);
             TimKiemTheoTenNhanVien(txtTimKiem.Text); 
         }
@@ -135,7 +136,9 @@ namespace ThongKeBao
         }
 
         protected void gvCoPhanChiPhoi_RowUpdating(object sender, GridViewUpdateEventArgs e)
+
         {
+          
             //try
             //{
             //    using (SqlConnection sqlcon = new SqlConnection(connectionString))
@@ -211,6 +214,10 @@ namespace ThongKeBao
 
 
         }
+        
+
+
+
         private void LoadDataToDropDownListNhanVien()
         {
 

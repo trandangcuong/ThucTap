@@ -188,6 +188,7 @@
     <Content Include="Images\edit.png" />
     <Content Include="Images\image.jpg" />
     <Content Include="Images\save.png" />
+    <Content Include="NguoiDaiDienVon.aspx" />
     <Content Include="NhanVien.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
@@ -381,6 +382,13 @@
     </Compile>
     <Compile Include="CoPhanChiPhoi.aspx.designer.cs">
       <DependentUpon>CoPhanChiPhoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDaiDienVon.aspx.cs">
+      <DependentUpon>NguoiDaiDienVon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NguoiDaiDienVon.aspx.designer.cs">
+      <DependentUpon>NguoiDaiDienVon.aspx</DependentUpon>
     </Compile>
     <Compile Include="NhanVien.aspx.cs">
       <DependentUpon>NhanVien.aspx</DependentUpon>
