@@ -69,12 +69,22 @@ namespace ThongKeBao
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["user"]!= null)
+            {
+                txtuser.Text = "xin chào: " + Session["user"].ToString();
+            }
 
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+        }
+
+        protected void btnlogout_Click(object sender, EventArgs e)
+        {
+            Session.Remove("user");
+            Response.Redirect("~/DangNhap.aspx");
         }
     }
 

@@ -126,22 +126,13 @@
                              </div>
                         </li>
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Đăng ký</a></li>
-                                <li><a runat="server" href="~/Account/Login">Đăng nhập</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Chào, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Đăng xuất" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
+                     <ul class="nav navbar-nav navbar-right">
+                                <li><a><asp:Label ID="txtuser" runat="server"></asp:Label></a></li>
+                                <li><p><asp:Button ID="btnlogout" CssClass="abc" runat="server" Text="Log out" OnClick="btnlogout_Click" /></p></li>
+                     </ul>
+                  <style>
+                      .abc{margin-top:5px; color:white;}
+                  </style>
                 </div>
             </div>
         </div>

@@ -73,7 +73,10 @@
         <br />
         <asp:Label ID="lbSuccessMessage" Text="" runat="server" ForeColor="Green"></asp:Label>
         <br />
-        <asp:Label ID="lbErrorMessage" Text="" runat="server" ForeColor="Red"></asp:Label>
+        <asp:Label ID="lbErrorMessage" Text="" runat="server" ForeColor="Red"></asp:Label><br />
+
+
+  <%-- <asp:Button ID="xuatexcel" runat="server" Text="Xuat Excel" OnClick="xuatexcel_Click"  />--%>
 
     </div>
 
@@ -118,5 +121,4 @@
 
     </div>
    
-
 </asp:Content>
